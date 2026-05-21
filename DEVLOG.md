@@ -1,12 +1,12 @@
-\## Day 1 — 2026-05-21
+**## Day 1 — 2026-05-21**
 
 
 
-\*\*Hours worked:\*\* 3
+\*\***Hours worked**:\*\* 3
 
 
 
-\*\*What I did:\*\*
+\*\***What I did**:\*\*
 
 \- Initialized Next.js 16 project with TypeScript and Tailwind CSS
 
@@ -20,7 +20,7 @@
 
 
 
-\*\*What I learned:\*\*
+\*\***What I learned**:\*\*
 
 \- Next.js App Router structure is different from Pages Router
 
@@ -30,7 +30,7 @@
 
 
 
-\*\*Blockers / what I'm stuck on:\*\*
+\*\***Blockers / what I'm stuck on**:\*\*
 
 \- Need to decide between Supabase vs Firebase for lead storage backend
 
@@ -38,7 +38,7 @@
 
 
 
-\*\*Plan for tomorrow:\*\*
+\*\***Plan for tomorrow**:\*\*
 
 \- Build the spend input form with all 8 AI tools
 
