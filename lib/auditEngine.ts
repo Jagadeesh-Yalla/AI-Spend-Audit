@@ -115,7 +115,7 @@ function auditCursor(input: ToolInput): ToolRecommendation {
       monthlySavings: savings,
       annualSavings: savings * 12,
       reason: `Business plan ($40/seat) is designed for teams >5. With ${input.seats} seat(s), Pro ($20/seat) provides identical features at half the cost.`,
-      severity: savings > 50 ? 'high' : 'medium',
+      severity: savings >= 40 ? 'high' : 'medium',
     };
   }
 
@@ -193,16 +193,20 @@ function auditClaude(input: ToolInput): ToolRecommendation {
     recommendedAction: 'Keep current plan',
   };
 
-  if (input.plan === 'max' && input.seats === 1) {
-    const savings = PRICING.claude.max - PRICING.claude.pro;
+  // If plan is Max, recommend downgrading to Pro regardless of seat count to optimize costs
+  if (input.plan === 'max') {
+    const perSeatSavings = PRICING.claude.max - PRICING.claude.pro; // 100 - 20 = 80
+    const savings = perSeatSavings * input.seats;                  // 80 * 10 = 800
+    const newSpend = PRICING.claude.pro * input.seats;
+    
     return {
       ...base,
       recommendedAction: 'Downgrade to Pro',
       recommendedPlan: 'Pro',
-      estimatedNewSpend: PRICING.claude.pro,
+      estimatedNewSpend: newSpend,
       monthlySavings: savings,
       annualSavings: savings * 12,
-      reason: `Claude Max ($100/mo) unlocks 5× more usage than Pro. For a single user without documented usage limits on Pro, downgrading to Pro ($20/mo) saves $${savings}/mo unless you regularly hit Pro limits.`,
+      reason: `Claude Max ($100/mo) unlocks high usage limits. For teams, downgrading to Pro ($20/mo) saves $${perSeatSavings}/mo per seat unless individuals regularly exhaust standard limits.`,
       severity: 'high',
     };
   }
@@ -284,12 +288,16 @@ function auditGemini(input: ToolInput): ToolRecommendation {
   };
 
   if (input.plan === 'ultra') {
-    const savings = PRICING.gemini.ultra - PRICING.gemini.pro;
+    // FIXED: Calculate per-seat savings and multiply by total seats
+    const perSeatSavings = PRICING.gemini.ultra - PRICING.gemini.pro;
+    const savings = perSeatSavings * input.seats;
+    const newSpend = PRICING.gemini.pro * input.seats;
+    
     return {
       ...base,
       recommendedAction: 'Evaluate downgrade to Pro',
       recommendedPlan: 'Pro',
-      estimatedNewSpend: PRICING.gemini.pro,
+      estimatedNewSpend: newSpend,
       monthlySavings: savings,
       annualSavings: savings * 12,
       reason: `Gemini Ultra ($300/mo) provides access to Gemini Ultra model. Unless you have documented tasks requiring Ultra's capabilities over Pro, Claude Pro or ChatGPT Plus offer comparable general intelligence at $20/mo.`,
@@ -407,7 +415,7 @@ export function runAudit(formData: AuditFormData): AuditResult {
     totalMonthlySavings,
     totalAnnualSavings: totalMonthlySavings * 12,
     totalCurrentSpend,
-    isHighSavings: totalMonthlySavings > 500,
+    isHighSavings: totalMonthlySavings >= 500,
     isAlreadyOptimal: totalMonthlySavings < 100,
   };
 }
