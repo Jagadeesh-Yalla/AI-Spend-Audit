@@ -1,36 +1,36 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🔍 AI Spend Audit
 
-## Getting Started
+> Free tool to find overspend in your AI tool stack — built for Credex.
 
-First, run the development server:
+**[🌐 Live Demo](https://ai-spend-audit-gamma-pearl.vercel.app)**
 
+## What it does
+Enter the AI tools your team pays for. Get an instant audit showing where you're overspending, what to switch, and total monthly + annual savings.
+
+## Screenshots
+[Add screenshots here]
+
+## Quick Start
 ```bash
+git clone https://github.com/Jagadeesh-Yalla/AI-Spend-Audit.git
+cd AI-Spend-Audit
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Decisions
+1. **Next.js over plain React** — App Router gives us API routes + SSR in one framework
+2. **In-memory store → Supabase** — Started simple, migrating to real DB on Day 3
+3. **Hardcoded audit rules** — Knowing when NOT to use AI is part of the test
+4. **Fallback AI summary** — Graceful degradation if Anthropic API fails
+5. **Email after value** — Lead capture shown only after audit results, never before
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Tech Stack
+- Next.js 16 + TypeScript
+- Tailwind CSS
+- Anthropic API (claude-haiku)
+- Supabase (coming Day 3)
+- Vercel (deployment)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Live URL
+https://ai-spend-audit-gamma-pearl.vercel.app
