@@ -16,7 +16,7 @@ This document compiles primary user research collected directly from target stud
   5. *Would a free tool that tells you if you're overpaying be useful?* -> **Yes**
 
 #### Verification Proof:
-![Sukhesh Interview Screenshot](interview_sukhesh.jpeg)
+![Sukhesh Interview Screenshot](./proof_sukhesh.jpeg)
 
 ---
 

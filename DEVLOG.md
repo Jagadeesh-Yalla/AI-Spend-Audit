@@ -51,3 +51,32 @@
 - Fill PRICING_DATA.md, GTM.md, ECONOMICS.md
 - Write minimum 5 tests for audit engine
 - Set up GitHub Actions CI workflow
+
+## Day 3 — 2026-05-23
+
+**Hours worked:** 5
+
+**What I did:**
+- Conducted 3 real user interviews (sukesh., Balaji., Vamsi.) — 10-15 mins each via WhatsApp
+- Wrote full USER_INTERVIEWS.md with direct quotes and design changes
+- Wrote complete REFLECTION.md answering all 5 questions
+- Added Cursor + Claude overlap detection to audit engine based on interview insight
+- Updated README.md with proper project description
+- Got Anthropic API key from console.anthropic.com and added to Vercel env vars
+- Tested full end-to-end flow on live Vercel URL
+
+**What I learned:**
+- Real users don't know which AI tools overlap — Cursor Pro includes Claude model access but nobody realizes it
+- ChatGPT Team vs 3x Plus is the highest-value single audit check — users assume "Team plan" is always cheaper
+- Talking to 3 real people surfaced 2 audit rules I hadn't thought of from the desk
+
+**Blockers / what I'm stuck on:**
+- Need to add Open Graph meta tags for shareable result URLs
+- README still has default Next.js content — needs screenshots
+
+**Plan for tomorrow:**
+- Add OG meta tags to results page for proper link previews
+- Take screenshots of working app and add to README
+- Fix any remaining Supabase integration issues
+- Polish results page UI
+- Write DEVLOG Day 4 entry
