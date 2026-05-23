@@ -56,4 +56,4 @@ The interviews uniformly highlight that the student demographic has a hard ceili
 ### 2. Product Positioning Pivot
 Because individual users are cost-sensitive, our **AI Spend Audit** tool serves a dual tactical purpose:
 * **For B2C / Free Users:** It acts as an educational discovery portal showing what features they can extract for free across competitive models (Claude vs. ChatGPT vs. Gemini) without upgrading.
-* **For B2B / Teams (The True Monetization Target):** While solo students stay on free tiers, software teams and organizations are the ones bleeding money on premium seat licenses. This user research validates that our software's marketing funnel must target businesses rather than solo retail users to maximize value capture.  
+* **For B2B / Teams (The True Monetization Target):** While solo students stay on free tiers, software teams and organizations are the ones bleeding money on premium seat licenses. This user research validates that our software's marketing funnel must target businesses rather than solo retail users to maximize value capture.
