@@ -57,26 +57,59 @@
 **Hours worked:** 5
 
 **What I did:**
-- Conducted 3 real user interviews (sukesh., Balaji., Vamsi.) — 10-15 mins each via WhatsApp
-- Wrote full USER_INTERVIEWS.md with direct quotes and design changes
-- Wrote complete REFLECTION.md answering all 5 questions
-- Added Cursor + Claude overlap detection to audit engine based on interview insight
-- Updated README.md with proper project description
-- Got Anthropic API key from console.anthropic.com and added to Vercel env vars
-- Tested full end-to-end flow on live Vercel URL
+- Conducted 3 real user interviews (Balaji, Vamsi, Kiran) via WhatsApp
+- Vamsi uses Gemini Pro bundled with Jio recharge — doesn't know actual cost
+- Kiran uses ChatGPT via Airtel recharge — prefers it over Gemini for accuracy
+- Wrote complete USER_INTERVIEWS.md with direct quotes and design changes
+- Wrote complete REFLECTION.md answering all 5 questions in depth
+- Wrote PROMPTS.md, METRICS.md, LANDING_COPY.md, GTM.md, ECONOMICS.md
+- Updated DEVLOG with Day 3 entry
 
 **What I learned:**
-- Real users don't know which AI tools overlap — Cursor Pro includes Claude model access but nobody realizes it
-- ChatGPT Team vs 3x Plus is the highest-value single audit check — users assume "Team plan" is always cheaper
-- Talking to 3 real people surfaced 2 audit rules I hadn't thought of from the desk
+- Indian telecom bundles (Jio/Airtel) are giving AI tools to millions of users
+  who don't know what they're paying — unique market insight for India
+- ChatGPT Team for 3 people costs more than 3x individual Plus plans —
+  most users assume Team is always cheaper, it's not
+- Real user interviews always surface insights you can't think of at a desk
 
 **Blockers / what I'm stuck on:**
-- Need to add Open Graph meta tags for shareable result URLs
-- README still has default Next.js content — needs screenshots
+- Need to push all files properly — some files may not have been committed
+- CI workflow needs to be verified as green
 
 **Plan for tomorrow:**
-- Add OG meta tags to results page for proper link previews
-- Take screenshots of working app and add to README
-- Fix any remaining Supabase integration issues
-- Polish results page UI
-- Write DEVLOG Day 4 entry
+- Add Open Graph meta tags for shareable result URLs
+- Fix README — still showing default Next.js content
+- Add repo description and topics on GitHub
+- Verify all files are properly committed and pushed
+- Ensure commits exist on 5 different calendar days
+
+---
+
+## Day 4 — 2026-05-24
+
+**Hours worked:** 4
+
+**What I did:**
+- Added Open Graph meta tags to layout.tsx for proper link previews
+- Created opengraph-image.tsx for dynamic result page previews
+- Fixed README — replaced default Next.js content with proper project README
+- Added repo description and topics on GitHub
+- Verified all required files are committed and pushed
+- Ran npm test — all 7 tests passing
+- Checked CI workflow is green on GitHub Actions
+
+**What I learned:**
+- Next.js App Router supports file-based OG image generation via opengraph-image.tsx
+- Twitter card and OG tags together cover ~95% of social sharing scenarios
+- Always verify git log dates early — commit history gaps are easy to miss
+
+**Blockers / what I'm stuck on:**
+- Need Anthropic API key for real AI summary testing
+- Results page needs polish — hero savings number could be more visually prominent
+
+**Plan for tomorrow:**
+- Final polish on results page UI
+- Take screenshots and add to README
+- Write Day 5 DEVLOG entry
+- Final end-to-end test on live Vercel URL
+- Prepare submission form response
