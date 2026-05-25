@@ -113,3 +113,29 @@
 - Write Day 5 DEVLOG entry
 - Final end-to-end test on live Vercel URL
 - Prepare submission form response
+
+## Day 5 — 2026-05-25
+
+**Hours worked:** 5
+
+**What I did:**
+- Wrote complete REFLECTION.md answering all 5 questions in depth
+- Added PDF export bonus feature using browser print API
+- Recorded 30-second screen recording and added to README
+- Verified all 7 tests passing with npm test
+- Verified npm run build succeeds with no errors
+- Added repo description and topics on GitHub
+- Final end-to-end test on live Vercel URL — full flow working
+
+**What I learned:**
+- Browser print API is a zero-dependency PDF export that works surprisingly well
+- End-to-end testing always finds edge cases unit tests miss
+- Writing the reflection forced me to think clearly about what I actually built vs what I planned
+
+**Blockers / what I'm stuck on:**
+- No major blockers — project is submission ready
+
+**Plan for tomorrow:**
+- Submit via Credex Google Form before May 27 deadline
+- Double-check all 12 required files exist in repo root
+- Verify CI shows green on GitHub Actions
