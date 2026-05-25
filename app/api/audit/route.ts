@@ -6,6 +6,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { runAudit } from '@/lib/auditEngine';
 import type { AuditFormData } from '@/lib/auditEngine';
 import { v4 as uuidv4 } from 'uuid';
+export const dynamic = 'force-dynamic';
 
 // In-memory store for now (Day 1-2)
 // Will replace with Supabase on Day 3

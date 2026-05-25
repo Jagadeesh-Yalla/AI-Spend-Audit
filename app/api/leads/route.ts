@@ -1,6 +1,7 @@
 // app/api/leads/route.ts
 import { NextRequest, NextResponse } from 'next/server';
 import { supabase } from '@/lib/supabase';
+export const dynamic = 'force-dynamic';
 
 // Simple rate limiting using in-memory store
 const rateLimitMap = new Map<string, number>();
