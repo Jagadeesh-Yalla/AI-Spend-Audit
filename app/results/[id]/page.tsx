@@ -6,6 +6,7 @@ import { useEffect, useState } from 'react';
 import { useParams } from 'next/navigation';
 import type { AuditResult } from '@/lib/auditEngine';
 import LeadCaptureForm from '../../components/LeadCaptureForm';
+
 interface AuditData {
   id: string;
   result: AuditResult;
@@ -95,17 +96,32 @@ export default function ResultsPage() {
   return (
     <main className="min-h-screen bg-[#0a0a0f] text-white py-12 px-4">
       <div className="max-w-3xl mx-auto">
-        {/* Header */}
+        {/* Header containing navigation and actions */}
         <div className="flex items-center justify-between mb-8">
           <a href="/" className="text-indigo-400 text-sm hover:underline">
             ← New audit
           </a>
-          <button
-            onClick={copyLink}
-            className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm hover:bg-white/10 transition-all"
-          >
-            {copied ? '✅ Copied!' : '🔗 Share this audit'}
-          </button>
+          <div className="flex items-center gap-3">
+            <button
+              onClick={copyLink}
+              className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm hover:bg-white/10 transition-all"
+            >
+              {copied ? '✅ Copied!' : '🔗 Share this audit'}
+            </button>
+            
+            {/* Native Print-to-PDF Export Action */}
+            <button
+              onClick={() => window.print()}
+              className="flex items-center gap-2 bg-white/5 border border-white/10 rounded-xl px-4 py-2 text-sm hover:bg-white/10 transition-all"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+                <polyline points="7 10 12 15 17 10"/>
+                <line x1="12" x2="12" y1="15" y2="3"/>
+              </svg>
+              Export PDF
+            </button>
+          </div>
         </div>
 
         {/* Hero savings */}
