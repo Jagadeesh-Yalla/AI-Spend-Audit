@@ -139,3 +139,31 @@
 - Submit via Credex Google Form before May 27 deadline
 - Double-check all 12 required files exist in repo root
 - Verify CI shows green on GitHub Actions
+
+## Day 6 — 2026-05-26
+
+**Hours worked:** 3
+
+**What I did:**
+- Fixed Supabase lead capture — leads now storing successfully (1 row confirmed)
+- Fixed rate limiting issue on leads API (429 error resolved)
+- Recorded 1-minute demo video and uploaded to YouTube
+- Added demo video link to README
+- Verified all 12 required markdown files exist in repo root
+- Verified CI showing green on GitHub Actions
+- Final end-to-end test on live Vercel URL — full flow working
+- Submitted via Credex Google Form
+
+**What I learned:**
+- In-memory rate limiting resets between serverless function calls — 
+  need Redis for production rate limiting
+- Supabase RLS blocks all inserts by default — must explicitly disable 
+  or create policies for anon access
+- End-to-end testing on the deployed URL always finds issues 
+  that localhost testing misses
+
+**Blockers / what I'm stuck on:**
+- No blockers — project submitted!
+
+**Plan for tomorrow:**
+- Wait for Round 1 results from Credex within 3 working days of May 27
