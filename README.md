@@ -22,13 +22,13 @@ For audits showing >$500/mo savings, Credex is surfaced as a way to capture even
 
 
 ### Landing Page
-![Landing Page](/screenshots/screenshot-landing.png)
+![Landing Page](public/screenshots/screenshot-landing.png)
 
 ### Audit Form
-![Audit Form](/screenshots/screenshot-audit.png)
+![Audit Form](public/screenshots/screenshot-audit.png)
 
 ### Results Page
-![Results Page](/screenshots/screenshot-results.png)
+![Results Page](public/screenshots/screenshot-results.png)
 
 ---
 
