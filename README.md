@@ -75,3 +75,7 @@ npm test
 ## Live URL
 
 https://ai-spend-audit-gamma-pearl.vercel.app
+
+## Demo
+
+🎥 [Watch 1-minute demo](https://youtu.be/KG2RgUPclec)
