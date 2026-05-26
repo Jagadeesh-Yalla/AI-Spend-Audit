@@ -52,6 +52,8 @@
 - Write minimum 5 tests for audit engine
 - Set up GitHub Actions CI workflow
 
+---
+
 ## Day 3 — 2026-05-23
 
 **Hours worked:** 5
@@ -66,10 +68,8 @@
 - Updated DEVLOG with Day 3 entry
 
 **What I learned:**
-- Indian telecom bundles (Jio/Airtel) are giving AI tools to millions of users
-  who don't know what they're paying — unique market insight for India
-- ChatGPT Team for 3 people costs more than 3x individual Plus plans —
-  most users assume Team is always cheaper, it's not
+- Indian telecom bundles (Jio/Airtel) are giving AI tools to millions of users who don't know what they're paying — unique market insight for India
+- ChatGPT Team for 3 people costs more than 3x individual Plus plans — most users assume Team is always cheaper, it's not
 - Real user interviews always surface insights you can't think of at a desk
 
 **Blockers / what I'm stuck on:**
@@ -114,6 +114,8 @@
 - Final end-to-end test on live Vercel URL
 - Prepare submission form response
 
+---
+
 ## Day 5 — 2026-05-25
 
 **Hours worked:** 5
@@ -121,7 +123,7 @@
 **What I did:**
 - Wrote complete REFLECTION.md answering all 5 questions in depth
 - Added PDF export bonus feature using browser print API
-- Recorded 30-second screen recording and added to README
+- Recorded screen recording and added to README
 - Verified all 7 tests passing with npm test
 - Verified npm run build succeeds with no errors
 - Added repo description and topics on GitHub
@@ -140,6 +142,8 @@
 - Double-check all 12 required files exist in repo root
 - Verify CI shows green on GitHub Actions
 
+---
+
 ## Day 6 — 2026-05-26
 
 **Hours worked:** 3
@@ -148,19 +152,16 @@
 - Fixed Supabase lead capture — leads now storing successfully (1 row confirmed)
 - Fixed rate limiting issue on leads API (429 error resolved)
 - Recorded 1-minute demo video and uploaded to YouTube
-- Added demo video link to README
+- Added screenshots to README
 - Verified all 12 required markdown files exist in repo root
 - Verified CI showing green on GitHub Actions
 - Final end-to-end test on live Vercel URL — full flow working
 - Submitted via Credex Google Form
 
 **What I learned:**
-- In-memory rate limiting resets between serverless function calls — 
-  need Redis for production rate limiting
-- Supabase RLS blocks all inserts by default — must explicitly disable 
-  or create policies for anon access
-- End-to-end testing on the deployed URL always finds issues 
-  that localhost testing misses
+- In-memory rate limiting resets between serverless function calls — need Redis for production rate limiting
+- Supabase RLS blocks all inserts by default — must explicitly disable or create policies for anon access
+- End-to-end testing on the deployed URL always finds issues that localhost testing misses
 
 **Blockers / what I'm stuck on:**
 - No blockers — project submitted!
