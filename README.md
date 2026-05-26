@@ -20,7 +20,15 @@ For audits showing >$500/mo savings, Credex is surfaced as a way to capture even
 
 > App running at https://ai-spend-audit-gamma-pearl.vercel.app
 
-Landing page → Audit form → Results with savings breakdown → Lead capture
+
+### Landing Page
+![Landing Page](/screenshots/screenshot-landing.png)
+
+### Audit Form
+![Audit Form](/screenshots/screenshot-audit.png)
+
+### Results Page
+![Results Page](/screenshots/screenshot-results.png)
 
 ---
 
